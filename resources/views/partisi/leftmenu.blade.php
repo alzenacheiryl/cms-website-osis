@@ -9,30 +9,30 @@
                     <ul class="metismenu" id="menu1">
 
                         <li>
-                            <a title="Landing Page" href="events.html" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
+                            <a title="Landing Page" href="event.html" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
                         </li>
 
-                        <li class="active">
-                            <a title="Landing Page" href="index.html" aria-expanded="false"><span class="educate-icon educate-home icon-wrap" aria-hidden="true"></span
+                        <li>
+                            <a title="Landing Page" href="index.html" aria-expanded="false"><span class="educate-icon educate-home icon-wrap" aria-hidden="true"></span>
 							<span class="mini-click-non">Dashboard</span></a>
                         </li>
 
                         <li>
                             <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Courses" href="all-courses.html"><span class="mini-sub-pro">Karya Siswa</span></a></li>
-                                <li><a title="Add Courses" href="add-course.html"><span class="mini-sub-pro">Info Lomba & Event</span></a></li>
-                                <li><a title="Edit Courses" href="edit-course.html"><span class="mini-sub-pro">Kritik dan Saran</span></a></li>
-                                <li><a title="Courses Profile" href="course-info.html"><span class="mini-sub-pro">Program Kerja</span></a></li>
+                                <li><a title="All Courses" href="karyasiswa.html"><span class="mini-sub-pro">Karya Siswa</span></a></li>
+                                <li><a title="Add Courses" href="infolomba.html"><span class="mini-sub-pro">Info Lomba & Event</span></a></li>
+                                <li><a title="Edit Courses" href="kritiksaran.html"><span class="mini-sub-pro">Kritik dan Saran</span></a></li>
+                                <li><a title="Courses Profile" href="programkerja.html"><span class="mini-sub-pro">Program Kerja</span></a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Master</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Professors" href="all-professors.html"><span class="mini-sub-pro">Akun Siswa</span></a></li>
-                                <li><a title="Add Professor" href="add-professor.html"><span class="mini-sub-pro">Tambah Akun Siswa</span></a></li>
-                                <li><a title="Edit Professor" href="edit-professor.html"><span class="mini-sub-pro">Edit Akun Siswa</span></a></li>
+                                <li><a title="All Professors" href="akunsiswa.html"><span class="mini-sub-pro">Akun Siswa</span></a></li>
+                                <li><a title="Add Professor" href="tambahakun.html"><span class="mini-sub-pro">Tambah Akun Siswa</span></a></li>
+                                <li><a title="Edit Professor" href="editakun.html"><span class="mini-sub-pro">Edit Akun Siswa</span></a></li>
                             </ul>
                         </li>
                     </ul>

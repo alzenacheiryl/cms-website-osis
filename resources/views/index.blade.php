@@ -1,6 +1,6 @@
 @extends('partisi.mainlayout')
 
-@section('judul','Halaman Utama')
+@section('judul','Dashboard')
 @section('utama')
         <div class="analytics-sparkle-area">
             <div class="container-fluid">

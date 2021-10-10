@@ -18,4 +18,10 @@ Route::get('/', [controller1::class, 'dashboard']);
 
 Route::get('/index.html', [controller1::class, 'dashboard']);
 
-Route::get('/index-2.html', [controller1::class, 'dashboard2']);
+Route::get('/event.html', [controller1::class, 'event']);
+
+Route::get('/akunsiswa.html', [controller1::class, 'akunsiswa']);
+
+Route::get('/tambahakun.html', [controller1::class, 'tambahakun']);
+
+Route::get('/editakun.html', [controller1::class, 'editakun']);

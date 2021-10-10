@@ -10,7 +10,16 @@ class controller1 extends Controller
     public function dashboard(){
         return view('index');
     }
-    public function dashboard2(){
-        return view('index-2');
+    public function event(){
+        return view('event');
+    }
+    public function akunsiswa(){
+        return view('akunsiswa');
+    }
+    public function tambahakun(){
+        return view('tambahakun');
+    }
+    public function editakun(){
+        return view('editakun');
     }
 }
