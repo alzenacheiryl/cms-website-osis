@@ -1,8 +1,8 @@
 <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
-                <strong><a href="index.html"><img src="img/logo/logosn.png" alt="" /></a></strong>
+                <a href="index.html"><img class="main-logo" src="img/logo/logo2.png" alt="" /></a>
+                <strong><a href="index.html"><img src="img/logo/osis2.png" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
@@ -23,7 +23,6 @@
                                 <li><a title="All Courses" href="karyasiswa.html"><span class="mini-sub-pro">Karya Siswa</span></a></li>
                                 <li><a title="Add Courses" href="infolomba.html"><span class="mini-sub-pro">Info Lomba & Event</span></a></li>
                                 <li><a title="Edit Courses" href="kritiksaran.html"><span class="mini-sub-pro">Kritik dan Saran</span></a></li>
-                                <li><a title="Courses Profile" href="programkerja.html"><span class="mini-sub-pro">Program Kerja</span></a></li>
                             </ul>
                         </li>
 

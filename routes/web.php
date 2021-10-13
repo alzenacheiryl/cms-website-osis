@@ -25,3 +25,11 @@ Route::get('/akunsiswa.html', [controller1::class, 'akunsiswa']);
 Route::get('/tambahakun.html', [controller1::class, 'tambahakun']);
 
 Route::get('/editakun.html', [controller1::class, 'editakun']);
+
+Route::get('/karyasiswa.html', [controller1::class, 'karyasiswa']);
+
+Route::get('/infolomba.html', [controller1::class, 'infolomba']);
+
+Route::get('/kritiksaran.html', [controller1::class, 'kritiksaran']);
+
+Route::get('/programkerja.html', [controller1::class, 'programkerja']);
