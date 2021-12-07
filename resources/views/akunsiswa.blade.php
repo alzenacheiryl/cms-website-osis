@@ -2,248 +2,110 @@
 
 @section('judul','Akun Siswa')
 @section('utama')
-<div class="contacts-area mg-b-15">
+<div class="product-status mg-b-15">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                    <div class="panel-body custom-panel-jw">
-                        <div class="social-media-in">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                        <img alt="logo" class="img-circle m-b" src="img/contact/1.jpg">
-                        <h3><a href="">John Alva</a></h3>
-                        <p class="all-pro-ad">London, LA</p>
-                        <p>
-                            Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.
-                        </p>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="product-status-wrap drp-lst">
+                    <h4>Akun Siswa</h4>
+                    <div class="add-product">
+                        <a href="add-department.html"> Akun siswa</a>
                     </div>
-                    <div class="panel-footer contact-footer">
-                        <div class="professor-stds-int">
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Likes: </span> <strong>956</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Comments: </span> <strong>350</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Views: </span> <strong>450</strong></div>
-                            </div>
-                        </div>
+                    <div class="asset-inner">
+                        <table>
+                            <tr>
+                                <th>No</th>
+                                <th>NISN</th>
+                                <th>Nama Siswa</th>
+                                <th>Tahun Ajaran</th>
+                                <th>Email</th>
+                                <th>Password</th>
+                                <th>Setting</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Computer</td>
+                                <td>John Alva</td>
+                                <td>admin@gmail.com</td>
+                                <td>01962067309</td>
+                                <td>1500</td>
+                                <td>
+                                    <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                    <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mechanical</td>
+                                <td>John Alva</td>
+                                <td>admin@gmail.com</td>
+                                <td>01962067309</td>
+                                <td>1700</td>
+                                <td>
+                                    <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                    <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>MBA</td>
+                                <td>John Alva</td>
+                                <td>admin@gmail.com</td>
+                                <td>01962067309</td>
+                                <td>1500</td>
+                                <td>
+                                    <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                    <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>BBA</td>
+                                <td>John Alva</td>
+                                <td>admin@gmail.com</td>
+                                <td>01962067309</td>
+                                <td>1200</td>
+                                <td>
+                                    <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                    <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>CSE</td>
+                                <td>John Alva</td>
+                                <td>admin@gmail.com</td>
+                                <td>01962067309</td>
+                                <td>1800</td>
+                                <td>
+                                    <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                    <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>MBA</td>
+                                <td>John Alva</td>
+                                <td>admin@gmail.com</td>
+                                <td>01962067309</td>
+                                <td>1000</td>
+                                <td>
+                                    <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                    <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                    <div class="panel-body custom-panel-jw">
-                        <div class="social-media-in">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                        <img alt="logo" class="img-circle m-b" src="img/contact/2.jpg">
-                        <h3><a href="">Amir dex</a></h3>
-                        <p class="all-pro-ad">Pakistan, Los</p>
-                        <p>
-                            Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.
-                        </p>
-                    </div>
-                    <div class="panel-footer contact-footer">
-                        <div class="professor-stds-int">
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Likes: </span> <strong>956</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Comments: </span> <strong>350</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Views: </span> <strong>450</strong></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30 res-tablet-mg-t-30 dk-res-t-pro-30">
-                    <div class="panel-body custom-panel-jw">
-                        <div class="social-media-in">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                        <img alt="logo" class="img-circle m-b" src="img/contact/3.jpg">
-                        <h3><a href="">Alva Adition</a></h3>
-                        <p class="all-pro-ad">India, Col</p>
-                        <p>
-                            Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.
-                        </p>
-                    </div>
-                    <div class="panel-footer contact-footer">
-                        <div class="professor-stds-int">
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Likes: </span> <strong>956</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Comments: </span> <strong>350</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Views: </span> <strong>450</strong></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="hpanel hblue contact-panel contact-panel-cs res-tablet-mg-t-30 dk-res-t-pro-30">
-                    <div class="panel-body custom-panel-jw">
-                        <div class="social-media-in">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                        <img alt="logo" class="img-circle m-b" src="img/contact/4.jpg">
-                        <h3><a href="">Sex Dog</a></h3>
-                        <p class="all-pro-ad">Uk, LA</p>
-                        <p>
-                            Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.
-                        </p>
-                    </div>
-                    <div class="panel-footer contact-footer">
-                        <div class="professor-stds-int">
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Likes: </span> <strong>956</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Comments: </span> <strong>350</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Views: </span> <strong>450</strong></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="hpanel hblue contact-panel contact-panel-cs mg-t-30">
-                    <div class="panel-body custom-panel-jw">
-                        <div class="social-media-in">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                        <img alt="logo" class="img-circle m-b" src="img/contact/1.jpg">
-                        <h3><a href="">Fox Well</a></h3>
-                        <p class="all-pro-ad">California, LA</p>
-                        <p>
-                            Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.
-                        </p>
-                    </div>
-                    <div class="panel-footer contact-footer">
-                        <div class="professor-stds-int">
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Likes: </span> <strong>956</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Comments: </span> <strong>350</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Views: </span> <strong>450</strong></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="hpanel hblue contact-panel contact-panel-cs mg-t-30">
-                    <div class="panel-body custom-panel-jw">
-                        <div class="social-media-in">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                        <img alt="logo" class="img-circle m-b" src="img/contact/3.jpg">
-                        <h3><a href="">Drom Simson</a></h3>
-                        <p class="all-pro-ad">Austrolia, LA</p>
-                        <p>
-                            Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.
-                        </p>
-                    </div>
-                    <div class="panel-footer contact-footer">
-                        <div class="professor-stds-int">
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Likes: </span> <strong>956</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Comments: </span> <strong>350</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Views: </span> <strong>450</strong></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="hpanel hblue contact-panel contact-panel-cs mg-t-30">
-                    <div class="panel-body custom-panel-jw">
-                        <div class="social-media-in">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                        <img alt="logo" class="img-circle m-b" src="img/contact/2.jpg">
-                        <h3><a href="">Sima son</a></h3>
-                        <p class="all-pro-ad">Suiden, Cro</p>
-                        <p>
-                            Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.
-                        </p>
-                    </div>
-                    <div class="panel-footer contact-footer">
-                        <div class="professor-stds-int">
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Likes: </span> <strong>956</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Comments: </span> <strong>350</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Views: </span> <strong>450</strong></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="hpanel hblue contact-panel contact-panel-cs mg-t-30">
-                    <div class="panel-body custom-panel-jw">
-                        <div class="social-media-in">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                        <img alt="logo" class="img-circle m-b" src="img/contact/4.jpg">
-                        <h3><a href="">Drama Son</a></h3>
-                        <p class="all-pro-ad">USA, LA</p>
-                        <p>
-                            Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.
-                        </p>
-                    </div>
-                    <div class="panel-footer contact-footer">
-                        <div class="professor-stds-int">
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Likes: </span> <strong>956</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Comments: </span> <strong>350</strong></div>
-                            </div>
-                            <div class="professor-stds">
-                                <div class="contact-stat"><span>Views: </span> <strong>450</strong></div>
-                            </div>
-                        </div>
+                    <div class="custom-pagination">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>

@@ -20,8 +20,8 @@
                         <li>
                             <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Courses" href="karyasiswa.html"><span class="mini-sub-pro">Karya Siswa</span></a></li>
-                                <li><a title="Add Courses" href="infolomba.html"><span class="mini-sub-pro">Info Lomba & Event</span></a></li>
+                                <li><a title="All Courses" href="karyasiswa.html"><span class="mini-sub-pro">Mading Karya Siswa</span></a></li>
+                                <li><a title="Add Courses" href="infolomba.html"><span class="mini-sub-pro">Mading Event</span></a></li>
                                 <li><a title="Edit Courses" href="kritiksaran.html"><span class="mini-sub-pro">Kritik dan Saran</span></a></li>
                             </ul>
                         </li>

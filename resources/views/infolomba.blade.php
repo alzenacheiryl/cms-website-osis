@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="product-status-wrap">
-                    <h4>Info Lomba & Event</h4>
+                    <h4>Event</h4>
                     <div class="add-product">
                         <a href="#">+ Info</a>
                     </div>
@@ -16,11 +16,10 @@
                             <tr>
                                 <th>No</th>
                                 <th>Pamflet</th>
-                                <th>Judul Lomba/Event</th>
+                                <th>Judul Event</th>
                                 <th>Status</th>
-                                <th>Tipe</th>
-                                <th>Nama Pengirim</th>
                                 <th>Deskripsi</th>
+                                <th>Penyelenggara</th>
                                 <th>Tanggal mulai</th>
                                 <th>Tanggal Akhir</th>
                                 <th>Setting</th>
@@ -34,7 +33,6 @@
                                 </td>
                                 <td>Html, Css</td>
                                 <td>CSE</td>
-                                <td>Deskripsi</td>
                                 <td>Book</td>
                                 <td>$1500</td>
                                 <td>
@@ -51,7 +49,6 @@
                                 </td>
                                 <td>PHP</td>
                                 <td>CSE</td>
-                                <td>Deskripsi</td>
                                 <td>CD</td>
                                 <td>$1700</td>
                                 <td>
@@ -68,7 +65,6 @@
                                 </td>
                                 <td>Java</td>
                                 <td>CSE</td>
-                                <td>Deskripsi</td>
                                 <td>Book</td>
                                 <td>$1500</td>
                                 <td>
@@ -85,7 +81,6 @@
                                 </td>
                                 <td>PHP</td>
                                 <td>CSE</td>
-                                <td>Deskripsi</td>
                                 <td>CD</td>
                                 <td>$1200</td>
                                 <td>
@@ -102,7 +97,6 @@
                                 </td>
                                 <td>Wordpress</td>
                                 <td>CSE</td>
-                                <td>Deskripsi</td>
                                 <td>Book</td>
                                 <td>$1800</td>
                                 <td>
@@ -119,7 +113,6 @@
                                 </td>
                                 <td>Java</td>
                                 <td>CSE</td>
-                                <td>Deskripsi</td>
                                 <td>CD</td>
                                 <td>$1000</td>
                                 <td>

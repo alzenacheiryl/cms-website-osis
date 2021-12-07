@@ -18,7 +18,7 @@
                                 <th>Karya</th>
                                 <th>Judul Karya</th>
                                 <th>Status</th>
-                                <th>Tipe</th>
+                                <th>Deskripsi</th>
                                 <th>Nama Pengirim</th>
                                 <th>Tanggal mulai</th>
                                 <th>Tanggal Akhir</th>
