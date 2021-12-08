@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\controller3;
+use App\Http\Controllers\controller2;
 use App\Http\Controllers\controller1;
 use Illuminate\Support\Facades\Route;
 
@@ -16,20 +18,26 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [controller1::class, 'dashboard']);
 
-Route::get('/index.html', [controller1::class, 'dashboard']);
+Route::get('/dashboard', [controller1::class, 'dashboard']);
 
-Route::get('/event.html', [controller1::class, 'event']);
+Route::get('/event', [controller1::class, 'event']);
 
-Route::get('/akunsiswa.html', [controller1::class, 'akunsiswa']);
+Route::get('/akunsiswa', [controller1::class, 'akunsiswa']);
 
-Route::get('/tambahakun.html', [controller1::class, 'tambahakun']);
+Route::get('/tambahakun', [controller1::class, 'tambahakun']);
 
-Route::get('/editakun.html', [controller1::class, 'editakun']);
+Route::get('/editakun', [controller1::class, 'editakun']);
 
-Route::get('/karyasiswa.html', [controller1::class, 'karyasiswa']);
+Route::get('/karyasiswa', [controller1::class, 'karyasiswa']);
 
-Route::get('/infolomba.html', [controller1::class, 'infolomba']);
+Route::get('/infolomba', [controller1::class, 'infolomba']);
 
-Route::get('/kritiksaran.html', [controller1::class, 'kritiksaran']);
+Route::get('/kritiksaran', [controller1::class, 'kritiksaran']);
 
-Route::get('/programkerja.html', [controller1::class, 'programkerja']);
+Route::get('/programkerja', [controller1::class, 'programkerja']);
+
+Route::get('/login', [controller2::class, 'login']);
+
+Route::get('/register', [controller3::class, 'register']);
+
+Route::post('/register', [controller3::class, 'store']);

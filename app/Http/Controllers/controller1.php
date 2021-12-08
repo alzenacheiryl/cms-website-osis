@@ -8,7 +8,7 @@ class controller1 extends Controller
 {
     //
     public function dashboard(){
-        return view('index');
+        return view('dashboard');
     }
     public function event(){
         return view('event');

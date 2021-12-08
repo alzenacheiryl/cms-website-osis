@@ -9,29 +9,29 @@
                     <ul class="metismenu" id="menu1">
 
                         <li>
-                            <a title="Landing Page" href="event.html" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
+                            <a title="Landing Page" href="event" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
                         </li>
 
                         <li>
-                            <a title="Landing Page" href="index.html" aria-expanded="false"><span class="educate-icon educate-home icon-wrap" aria-hidden="true"></span>
+                            <a title="Landing Page" href="dashboard" aria-expanded="false"><span class="educate-icon educate-home icon-wrap" aria-hidden="true"></span>
 							<span class="mini-click-non">Dashboard</span></a>
                         </li>
 
                         <li>
                             <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Courses" href="karyasiswa.html"><span class="mini-sub-pro">Mading Karya Siswa</span></a></li>
-                                <li><a title="Add Courses" href="infolomba.html"><span class="mini-sub-pro">Mading Event</span></a></li>
-                                <li><a title="Edit Courses" href="kritiksaran.html"><span class="mini-sub-pro">Kritik dan Saran</span></a></li>
+                                <li><a title="All Courses" href="karyasiswa"><span class="mini-sub-pro">Mading Karya Siswa</span></a></li>
+                                <li><a title="Add Courses" href="infolomba"><span class="mini-sub-pro">Mading Event</span></a></li>
+                                <li><a title="Edit Courses" href="kritiksaran"><span class="mini-sub-pro">Kritik dan Saran</span></a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Master</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Professors" href="akunsiswa.html"><span class="mini-sub-pro">Akun Siswa</span></a></li>
-                                <li><a title="Add Professor" href="tambahakun.html"><span class="mini-sub-pro">Tambah Akun Siswa</span></a></li>
-                                <li><a title="Edit Professor" href="editakun.html"><span class="mini-sub-pro">Edit Akun Siswa</span></a></li>
+                                <li><a title="All Professors" href="akunsiswa"><span class="mini-sub-pro">Akun Siswa</span></a></li>
+                                <li><a title="Add Professor" href="tambahakun"><span class="mini-sub-pro">Tambah Akun Siswa</span></a></li>
+                                <li><a title="Edit Professor" href="editakun"><span class="mini-sub-pro">Edit Akun Siswa</span></a></li>
                             </ul>
                         </li>
                     </ul>
