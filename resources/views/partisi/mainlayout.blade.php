@@ -58,10 +58,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- responsive CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Login CSS
-      ============================================ -->
-      <link rel="stylesheet" href="css/login.css">    
+    <link rel="stylesheet" href="css/responsive.css">  
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>

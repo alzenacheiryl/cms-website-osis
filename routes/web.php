@@ -3,6 +3,7 @@
 use App\Http\Controllers\controller3;
 use App\Http\Controllers\controller2;
 use App\Http\Controllers\controller1;
+use App\Http\Controllers\AkunSiswa;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,7 +23,7 @@ Route::get('/dashboard', [controller1::class, 'dashboard']);
 
 Route::get('/event', [controller1::class, 'event']);
 
-Route::get('/akunsiswa', [controller1::class, 'akunsiswa']);
+Route::get('/akunsiswa', [AkunSiswa::class, 'index'])->name('akunsiswa');
 
 Route::get('/tambahakun', [controller1::class, 'tambahakun']);
 
