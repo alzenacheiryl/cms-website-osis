@@ -25,7 +25,7 @@
                             </thead>
 
                             <tbody>
-                                @@foreach ($datasiswa as $siswa)
+                                @foreach ($datasiswa as $siswa)
                                 <tr>
                                     <td>{{ $siswa->id }}</td>
                                     <td>{{ $siswa->nisn }}</td>
@@ -33,11 +33,18 @@
                                     <td>{{ $siswa->th_ajaran }}</td>
                                     <td>{{ $siswa->email }}</td>
                                     <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
+                                        <button href="{{ route('editakunbaru') }}" method="post" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                        
+                                        <form action="{{ route('deleteakunsiswa', $siswa->id) }}" method="post" class="d-inline">
+                                            @method('delete')
+                                            @csrf
+                                        <button title="Trash" class="pd-setting-ed border-0" onclick="return confirm('Apakah kamu yakin?')"><i class="fa fa-trash-o"></i></button>
+                                        </form>
+                                    
+                                </td>
                                 </tr>
                                 @endforeach
+                                
                             </tbody>
                            
                         </table>

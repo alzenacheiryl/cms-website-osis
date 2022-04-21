@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\akunsiswa;
+use App\Models\AkunSiswa;
 
-class AkunSiswa extends Controller
+class AkunSiswaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AkunSiswa extends Controller
      */
     public function index()
     {
-        $datasiswa=akunsiswa::all();
+        $datasiswa = AkunSiswa::all();
         return view ('akunsiswa', compact('datasiswa'));
     }
 
@@ -25,7 +25,7 @@ class AkunSiswa extends Controller
      */
     public function create()
     {
-        //
+        return view ('tambahakun');
     }
 
     /**
@@ -36,7 +36,9 @@ class AkunSiswa extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $dataupload = $request->all();
+        AkunSiswa::create($dataupload);
+        return redirect(route('akunsiswa'));
     }
 
     /**
@@ -58,7 +60,7 @@ class AkunSiswa extends Controller
      */
     public function edit($id)
     {
-        //
+        return view ('editakunbaru');
     }
 
     /**
@@ -81,6 +83,7 @@ class AkunSiswa extends Controller
      */
     public function destroy($id)
     {
-        //
+        $hapus = AkunSiswa::findorfail($id)->delete();
+        return back();
     }
 }
