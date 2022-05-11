@@ -9,10 +9,11 @@
                 <div class="product-status-wrap">
                     <h4>Karya Siswa</h4>
                     <div class="add-product">
-                        <a href="#">+ Karya</a>
+                        <a href="tambahkarya">+ Karya Siswa</a>
                     </div>
                     <div class="asset-inner">
                         <table>
+                            <thead>
                             <tr>
                                 <th>No</th>
                                 <th>Tanggal Pengiriman</th>
@@ -22,19 +23,33 @@
                                 <th>Nama Pengirim</th>
                                 <th>Setting</th>
                             </tr>
+                            </thead>
+
+                            <tbody>
+                                @foreach ($datakaryasiswa as $karya)
                             <tr>
-                                <td>1</td>
-                                <td>11/02/22</td>
-                                <td>Web Development Book</td>
-                                <td><img src="img/product/book-1.jpg" alt="" /></td>
-                                <td>Artikel</td>
-                                <td>Steven jobs</td>
+                                <td>{{ $karya->id }}</td>
+                                <td>{{ $karya->tanggal }}</td>
+                                <td>{{ $karya->judul }}</td>
+                                <td>{{ $karya->karya }}</td>
+                                <td>{{ $karya->tipe }}</td>
+                                <td>{{ $karya->akunsiswa_id }}</td>
                                 <td>
                                     <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                    <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+
+                                    <form action="{{ route('deletekaryasiswa', $karya->id) }}" method="post" class="d-inline">
+                                        @method('delete')
+                                        @csrf
+                                    <button title="Trash" class="pd-setting-ed border-0" onclick="return confirm('Apakah kamu yakin?')"><i class="fa fa-trash-o"></i></button>
+                                    </form>
+
+                                    
                                 </td>
                             </tr>
+                            @endforeach
+                            </tbody>
                         </table>
+
                     </div>
                     <div class="custom-pagination">
                         <ul class="pagination">

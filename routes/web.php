@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KaryaSiswaController;
 use App\Http\Controllers\AkunSiswaController;
 use App\Http\Controllers\controller3;
 use App\Http\Controllers\controller2;
@@ -33,7 +34,11 @@ Route::get('/editakunbaru', [AkunSiswaController::class, 'edit'])->name('editaku
 
 Route::get('/editakun', [controller1::class, 'editakun'])->name('editakun');
 
-Route::get('/karyasiswa', [controller1::class, 'karyasiswa'])->name('karyasiswa');
+Route::get('/karyasiswa', [KaryaSiswaController::class, 'index'])->name('karyasiswa');
+Route::delete('/deletekaryasiswa/{id}', [KaryaSiswaController::class, 'destroy'])->name('deletekaryasiswa');
+
+Route::get('/tambahkarya', [KaryaSiswaController::class, 'create'])->name('tambahkarya');
+Route::post('/tambahkankarya', [KaryaSiswaController::class, 'store'])->name('tambahkankarya');
 
 Route::get('/infolomba', [controller1::class, 'infolomba'])->name('info lomba');
 

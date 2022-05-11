@@ -22,7 +22,7 @@
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="All Courses" href="karyasiswa"><span class="mini-sub-pro">Karya Siswa</span></a></li>
                                 <li><a title="Edit Courses" href="kritiksaran"><span class="mini-sub-pro">Kritik dan Saran</span></a></li>
-                                <li><a title="Add Courses" href="infolomba"><span class="mini-sub-pro">Mading Event</span></a></li>
+                                {{-- <li><a title="Add Courses" href="infolomba"><span class="mini-sub-pro">Mading Event</span></a></li> --}}
                             </ul>
                         </li>
 

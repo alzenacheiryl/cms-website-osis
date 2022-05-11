@@ -9,7 +9,7 @@
                 <div class="product-status-wrap drp-lst">
                     <h4>Akun Siswa</h4>
                     <div class="add-product">
-                        <a href="tambahakun"> Tambah Akun</a>
+                        <a href="tambahakun">+ Akun Siswa</a>
                     </div>
                     <div class="asset-inner">
                         <table>
