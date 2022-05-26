@@ -19,7 +19,7 @@
                                     <th>NISN</th>
                                     <th>Nama Siswa</th>
                                     <th>Tahun Ajaran</th>
-                                    <th>Email</th>
+                                    <th>Email Pribadi</th>
                                     <th>Setting</th>
                                 </tr>
                             </thead>
@@ -27,18 +27,18 @@
                             <tbody>
                                 @foreach ($datasiswa as $siswa)
                                 <tr>
-                                    <td>{{ $siswa->id }}</td>
+                                    <td>{{ $loop->iteration }}</td>
                                     <td>{{ $siswa->nisn }}</td>
                                     <td>{{ $siswa->nm_siswa }}</td>
                                     <td>{{ $siswa->th_ajaran }}</td>
                                     <td>{{ $siswa->email }}</td>
-                                    <td>
-                                        <button href="{{ route('editakunbaru') }}" method="post" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        
+                                    <td style="display:flex; gap:14px;">
+                                        <a href="{{ route('editsiswa', $siswa->id) }}" method="get" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            
                                         <form action="{{ route('deleteakunsiswa', $siswa->id) }}" method="post" class="d-inline">
                                             @method('delete')
                                             @csrf
-                                        <button title="Trash" class="pd-setting-ed border-0" onclick="return confirm('Apakah kamu yakin?')"><i class="fa fa-trash-o"></i></button>
+                                        <button title="Trash" class="pd-setting-ed border-0" onclick="return confirm('Apakah anda yakin menghapus akun {{ $siswa->nm_siswa }}?')"><i class="fa fa-trash-o"></i></button>
                                         </form>
                                     
                                 </td>

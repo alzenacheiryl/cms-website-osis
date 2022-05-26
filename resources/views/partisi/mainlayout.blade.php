@@ -7,6 +7,9 @@
     <title>Website OSIS | @yield('judul')</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{-- Remix Icon --}}
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- logoosis
 		============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset ('img/logoosis.jpeg') }}">

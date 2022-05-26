@@ -57,3 +57,6 @@ Route::get('/programkerja', [controller1::class, 'programkerja'])->name('program
 Route::get('/login', [controller2::class, 'login'])->name('login');
 Route::get('/register', [controller3::class, 'register'])->name('register');
 Route::post('/register', [controller3::class, 'store'])->name('register');
+
+//welcome
+Route::get('/welcome', [controller1::class, 'welcome'])->name('welcome');

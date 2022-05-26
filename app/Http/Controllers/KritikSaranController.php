@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\KaryaSiswa;
+use App\Models\KritikSaran;
 use Illuminate\Support\Facades\DB;
 
-class KaryaSiswaController extends Controller
+class KritikSaranController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class KaryaSiswaController extends Controller
      */
     public function index()
     {
-        // $datakaryasiswa = DB::table("karyasiswa")->join("akunsiswa", "karyasiswa.akunsiswa_id", "=", "akunsiswa.id")->Get();
-        $datakaryasiswa = KaryaSiswa::with('Akunsiswa')->get();
-        return view ('karyasiswa', compact('datakaryasiswa'));
+        // $kritik = DB::table('kritiksaran')->join('akunsiswa', 'kritiksaran.akunsiswa_id', '=', 'akunsiswa.id')->Get();
+        $kritik = KritikSaran::with('AkunSiswa')->Get();
+        return view('kritiksaran', compact('kritik'));
     }
 
     /**
@@ -27,7 +27,7 @@ class KaryaSiswaController extends Controller
      */
     public function create()
     {
-        return view ('tambahkarya');
+        return view ('tambahkritik');
     }
 
     /**
@@ -39,8 +39,8 @@ class KaryaSiswaController extends Controller
     public function store(Request $request)
     {
         $dataup = $request->all();
-        KaryaSiswa::create($dataup);
-        return redirect(route('karyasiswa'));
+        KritikSaran::create($dataup);
+        return redirect(route('kritiksaran'));
     }
 
     /**
@@ -62,8 +62,8 @@ class KaryaSiswaController extends Controller
      */
     public function edit($id)
     {
-        $editkarya = KaryaSiswa::findorfail($id);
-        return view ('editkarya', compact('editkarya'));
+        $editkritik = KritikSaran::findorfail($id);
+        return view ('editkritik', compact('editkritik'));
     }
 
     /**
@@ -75,9 +75,9 @@ class KaryaSiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $editkarya = KaryaSiswa::findorfail($id);
-        $editkarya->update($request->all());
-        return redirect(route('editkarya'));
+        $editkritik = KritikSaran::findorfail($id);
+        $editkritik->update($request->all());
+        return redirect(route('editkritik'));
     }
 
     /**
@@ -88,7 +88,7 @@ class KaryaSiswaController extends Controller
      */
     public function destroy($id)
     {
-        $hapus = KaryaSiswa::findorfail($id)->delete();
+        $hapus = KritikSaran::findorfail($id)->delete();
         return back();
     }
 }

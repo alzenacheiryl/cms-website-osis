@@ -6,13 +6,14 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="product-status-wrap">
+                <div class="product-status-wrap drp-lst">
                     <h4>Karya Siswa</h4>
                     <div class="add-product">
                         <a href="tambahkarya">+ Karya Siswa</a>
                     </div>
                     <div class="asset-inner">
-                        <table>
+
+                            <table>
                             <thead>
                             <tr>
                                 <th>No</th>
@@ -28,20 +29,20 @@
                             <tbody>
                                 @foreach ($datakaryasiswa as $karya)
                             <tr>
-                                <td>{{ $karya->id }}</td>
+                                <td>{{ $loop->iteration }}</td>
                                 <td>{{ $karya->tanggal }}</td>
                                 <td>{{ $karya->judul }}</td>
-                                <td>{{ $karya->karya }}</td>
-                                <td>{{ $karya->tipe }}</td>
-                                <td>{{ $karya->akunsiswa_id }}</td>
                                 <td>
-                                    <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                    <a href="{{ $karya->karya }}">{{ $karya->karya }}</a>
+                                </td>
+                                <td>{{ $karya->tipe }}</td>
+                                <td>{{ $karya->Akunsiswa -> nm_siswa }}</td>
+                                <td style="display:flex; gap:16px;">
+                                    <a href="{{ route('editkarya', $karya -> id) }}" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                    <a href="{{ route('deletekaryasiswa', $karya -> id) }}" onclick="return confirm('Apakah anda yakin menghapus karya {{ $karya->judul }} ?')" data-toggle="tooltip" title="Delete" class="pd-setting-ed">
+                                        <i class="ri-delete-bin-6-fill"></i></a>
 
-                                    <form action="{{ route('deletekaryasiswa', $karya->id) }}" method="post" class="d-inline">
-                                        @method('delete')
-                                        @csrf
-                                    <button title="Trash" class="pd-setting-ed border-0" onclick="return confirm('Apakah kamu yakin?')"><i class="fa fa-trash-o"></i></button>
-                                    </form>
+                                    
 
                                     
                                 </td>

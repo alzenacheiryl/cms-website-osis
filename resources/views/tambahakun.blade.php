@@ -22,25 +22,24 @@
                                         <div class="row">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                                                <form id="acount-infor" action="{{ route('tambahkanakun') }}" class="acount-infor" method="post">
+                                                <form action="{{ route('tambahkanakun') }}" method="post" id="acount-infor" class="acount-infor">
                                                     @csrf
                                                     <div class="devit-card-custom">
                                                         <div class="form-group">
-                                                            <input name="nisn" type="number" class="form-control" placeholder="NISN">
+                                                            <label>NISN</label>
+                                                            <input name="nisn" type="number" class="form-control" placeholder="Contoh : 0045823654">
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="nm_siswa" type="text" class="form-control" placeholder="Nama Siswa">
+                                                            <label>Nama Siswa</label>
+                                                            <input name="nm_siswa" type="text" class="form-control" placeholder="Contoh : Alzena Cheiryl Violney">
                                                         </div>
                                                         <div class="form-group">
-                                                            <select name="th_ajaran" class="form-control">
-                                                                <option value="none" selected="" disabled="">Tahun Ajaran</option>
-                                                                <option value="2019">2019</option>
-                                                                <option value="2020">2020</option>
-                                                                <option value="2021">2021</option>
-                                                            </select>
+                                                            <label>Tahun Ajaran</label>
+                                                            <input name="th_ajaran" type="number" class="form-control" placeholder="Contoh : 2020">
                                                         </div>
                                                         <div class="form-group">
-                                                            <input type="text" class="form-control" name="email" placeholder="Email">
+                                                            <label>Email Pribadi</label>
+                                                            <input type="email" class="form-control" name="email" placeholder="Contoh : alzenacheiryl@gmail.com">
                                                         </div>
 
                                                         {{-- <div class="form-group">

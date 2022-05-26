@@ -1,6 +1,6 @@
 @extends('partisi.mainlayout')
 
-@section('judul','Tambah Akun Siswa')
+@section('judul','Edit Akun Siswa')
 @section('utama')
 <div class="single-pro-review-area mt-t-30 mg-b-15">
     <div class="container-fluid">
@@ -8,7 +8,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="product-payment-inner-st">
                     <ul id="myTabedu1" class="tab-review-design">
-                        <li class="active"><a href="#description">Tambah Data Siswa</a></li>
+                        <li class="active"><a href="#description">Edit Data Siswa</a></li>
 
                         {{-- <li><a href="#reviews"> Account Information</a></li>
                         <li><a href="#INFORMATION">Social Information</a></li> --}}
@@ -22,25 +22,25 @@
                                         <div class="row">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                                                <form id="acount-infor" action="{{ route('tambahkanakun') }}" class="acount-infor" method="post">
+                                                <form action="{{ route('editkansiswa', $editsiswa->id) }}" id="acount-infor" class="acount-infor" method="post"> 
+                                                    {{-- {{ route('editsiswa', $siswa->id) }} --}}
                                                     @csrf
                                                     <div class="devit-card-custom">
+                                                        <label>NISN</label>
                                                         <div class="form-group">
-                                                            <input name="nisn" type="number" class="form-control" placeholder="NISN">
+                                                            <input name="nisn" type="number" class="form-control" placeholder="NISN" value="{{ $editsiswa->nisn }}">
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="nm_siswa" type="text" class="form-control" placeholder="Nama Siswa">
+                                                            <label>Nama Siswa</label>
+                                                            <input name="nm_siswa" type="text" class="form-control" placeholder="Nama Siswa" value="{{ $editsiswa->nm_siswa }}">
                                                         </div>
                                                         <div class="form-group">
-                                                            <select name="th_ajaran" class="form-control">
-                                                                <option value="none" selected="" disabled="">Tahun Ajaran</option>
-                                                                <option value="2019">2019</option>
-                                                                <option value="2020">2020</option>
-                                                                <option value="2021">2021</option>
-                                                            </select>
+                                                            <label> Tahun Ajaran</label>
+                                                            <input type="text" name="th_ajaran" class='form-control' placeholder="Tahun Ajaran" value="{{ $editsiswa->th_ajaran }}">
                                                         </div>
                                                         <div class="form-group">
-                                                            <input type="text" class="form-control" name="email" placeholder="Email">
+                                                            <label>Email</label>
+                                                            <input type="email" class="form-control" name="email" placeholder="Email" value="{{ $editsiswa->email }}">
                                                         </div>
 
                                                         {{-- <div class="form-group">

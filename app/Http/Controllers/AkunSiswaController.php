@@ -60,7 +60,8 @@ class AkunSiswaController extends Controller
      */
     public function edit($id)
     {
-        return view ('editakunbaru');
+        $editsiswa = AkunSiswa::findorfail($id);
+        return view ('editsiswa', compact('editsiswa'));
     }
 
     /**
@@ -72,7 +73,9 @@ class AkunSiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $editsiswa = AkunSiswa::findorfail($id);
+        $editsiswa->update($request->all());
+        return redirect(route('akunsiswa'));
     }
 
     /**

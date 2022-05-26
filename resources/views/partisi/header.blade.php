@@ -147,7 +147,7 @@
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
                                                         <li><a href="/login"><span class="edu-icon edu-home-admin author-log-ic"></span>Login</a>
                                                         </li>
-                                                        <li><a href="#"><span class="edu-icon edu-settings author-log-ic"></span>Settings</a>
+                                                        <li><a href="/welcome"><span class="edu-icon edu-settings author-log-ic"></span>Laravel</a>
                                                         </li>
                                                         <li><a href="#"><span class="edu-icon edu-locked author-log-ic"></span>Logout</a>
                                                         </li>

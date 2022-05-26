@@ -9,10 +9,12 @@
                 <div class="product-status-wrap drp-lst">
                     <h4>Kritik dan Saran</h4>
                     <div class="add-product">
-                        <a href="add-department.html">+ Kritik dan Saran</a>
+                        <a href="tambahkritik">+ Kritik dan Saran</a>
                     </div>
                     <div class="asset-inner">
+
                         <table>
+                        <thead>
                             <tr>
                                 <th>No</th>
                                 <th>Tanggal Pengiriman</th>
@@ -21,32 +23,30 @@
                                 <th>Status</th>
                                 <th>Setting</th>
                             </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>12/02/22</td>
-                                <td>Adakan lomba baca puisi</td>
-                                <td>John Alva</td>
+                        </thead>
+
+                        <tbody>
+                            @foreach ($kritik as $saran)
+
+                                <td>{{ $loop->iteration }}</td>
+                                <td>{{ $saran->tanggal }}</td>
+                                <td>{{ $saran->kritiksaran }}</td>
+                                <td>{{ $saran->AkunSiswa-> nm_siswa }}</td>
                                 <td>
                                     <button class="pd-setting">Complete</button>
+                                    {{-- <button class="ds-setting">Active</button> --}}
                                 </td>
-                                <td>
-                                    <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                    <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>12/02/22</td>
-                                <td>Adakan lomba baca puisi</td>
-                                <td>John Alva</td>
-                                <td>
-                                    <button class="ds-setting">Active</button>
-                                </td>
-                                <td>
-                                    <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                    <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                <td style="display:flex; gap:16px;">
+                                    <a href="{{ route('editkritik', $saran-> id) }}" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                    <a href="{{ route('deletekritiksaran', $saran -> id) }}" onclick="return confirm('Apakah anda yakin menghapus saran {{ $saran->AkunSiswa-> nm_siswa }} ?')" data-toggle="tooltip" title="Delete" class="pd-setting-ed">
+                                        <i class="ri-delete-bin-6-fill"></i></a>
+
                                 </td>
                             </tr>
+                             
+                            @endforeach
+                        </tbody>
+                    
                         </table>
                     </div>
                     <div class="custom-pagination">

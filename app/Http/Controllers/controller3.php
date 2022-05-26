@@ -8,7 +8,7 @@ class controller3 extends Controller
 {
     //
     public function register(){
-        return view('register.register',[
+        return view('login.register',[
             'title' => 'register'
         ]);
     }
