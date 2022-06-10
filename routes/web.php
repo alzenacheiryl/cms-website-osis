@@ -42,7 +42,7 @@ Route::get('/deletekaryasiswa/{id}', [KaryaSiswaController::class, 'destroy'])->
 //Kritik dan Saran
 Route::get('/kritiksaran', [KritikSaranController::class, 'index'])->name('kritiksaran');
 Route::get('/tambahkritik', [KritikSaranController::class, 'create'])->name('tambahkritik');
-Route::post('/tambahkankritik', [KritikSparanController::class, 'store'])->name('tambahkankritik');
+Route::post('/tambahkankritik', [KritikSaranController::class, 'store'])->name('tambahkankritik');
 Route::get('/editkritik/{id}', [KritikSaranController::class,'edit'])->name('editkritik');
 Route::post('/editkankritik/{id}', [KritikSaranController::class, 'update'])->name('editkankritik');
 Route::get('/deletekritiksaran/{id}', [KritikSaranController::class, 'destroy'])->name('deletekritiksaran');

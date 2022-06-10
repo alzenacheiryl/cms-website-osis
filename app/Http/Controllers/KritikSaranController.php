@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AkunSiswa;
 use Illuminate\Http\Request;
 use App\Models\KritikSaran;
 use Illuminate\Support\Facades\DB;
@@ -27,7 +28,8 @@ class KritikSaranController extends Controller
      */
     public function create()
     {
-        return view ('tambahkritik');
+        $siswa = AkunSiswa::all();
+        return view ('tambahkritik', compact('siswa'));
     }
 
     /**
@@ -62,8 +64,9 @@ class KritikSaranController extends Controller
      */
     public function edit($id)
     {
+        $siswa = AkunSiswa::all();
         $editkritik = KritikSaran::findorfail($id);
-        return view ('editkritik', compact('editkritik'));
+        return view ('editkritik', compact('editkritik', 'siswa'));
     }
 
     /**

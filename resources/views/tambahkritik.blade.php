@@ -32,7 +32,12 @@
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Nama Pengirim</label>
-                                                            <input name="akunsiswa_id" type="text" class="form-control" placeholder="Nama pengirim (Tulis nama lengkap!)">
+                                                            <select name="akunsiswa_id" id="akunsiswa_id" class="form-control">
+                                                                <option value="none" selected="" disabled="">Pilih Nama</option>
+                                                                @foreach ($siswa as $item)
+                                                                <option value="{{ $item->id }}">{{ $item->nm_siswa }}</option> 
+                                                                @endforeach
+                                                            </select>
                                                         </div>
 
                                                         <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>

@@ -32,12 +32,18 @@
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Nama Pengirim</label>
-                                                            <input name="akunsiswa_id" type="text" class="form-control" placeholder="Nama pengirim (Tulis nama lengkap!)"value="{{ $editkritik->AkunSiswa-> nm_siswa }}">
+                                                            <select name="akunsiswa_id" id="akunsiswa_id" class="form-control">
+                                                                <option disabled value>Pilih Nama</option>
+                                                                <option value="{{ $editkritik->akunsiswa_id }}">{{ $editkritik->AkunSiswa->nm_siswa }}</option> 
+                                                                @foreach ($siswa as $item)
+                                                                <option value="{{ $item->id }}">{{ $item->nm_siswa }}</option> 
+                                                                @endforeach
+                                                            </select>
                                                         </div>
                                                         <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
                                                     </div>
                                                 </form>
-
+                                                <br>
                                             </div>
                                         </div>
                                     </div>
