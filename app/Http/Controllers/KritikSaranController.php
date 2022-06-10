@@ -65,7 +65,7 @@ class KritikSaranController extends Controller
     public function edit($id)
     {
         $siswa = AkunSiswa::all();
-        $editkritik = KritikSaran::findorfail($id);
+        $editkritik = KritikSaran::with('AkunSiswa')->findorfail($id);
         return view ('editkritik', compact('editkritik', 'siswa'));
     }
 
@@ -80,7 +80,7 @@ class KritikSaranController extends Controller
     {
         $editkritik = KritikSaran::findorfail($id);
         $editkritik->update($request->all());
-        return redirect(route('editkritik'));
+        return redirect(route('kritiksaran'));
     }
 
     /**

@@ -29,7 +29,7 @@ Route::get('/tambahakun', [AkunSiswaController::class, 'create'])->name('tambaha
 Route::post('/tambahkanakun', [AkunSiswaController::class, 'store'])->name('tambahkanakun');
 Route::get('/editsiswa/{id}', [AkunSiswaController::class, 'edit'])->name('editsiswa');
 Route::post('/editkansiswa/{id}', [AkunSiswaController::class, 'update'])->name('editkansiswa');
-Route::delete('/deleteakunsiswa/{id}', [AkunSiswaController::class, 'destroy'])->name('deleteakunsiswa');
+Route::get('/deleteakunsiswa/{id}', [AkunSiswaController::class, 'destroy'])->name('deleteakunsiswa');
 
 //Karya Siswa
 Route::get('/karyasiswa', [KaryaSiswaController::class, 'index'])->name('karyasiswa');

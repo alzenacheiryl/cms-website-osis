@@ -34,12 +34,8 @@
                                     <td>{{ $siswa->email }}</td>
                                     <td style="display:flex; gap:14px;">
                                         <a href="{{ route('editsiswa', $siswa->id) }}" method="get" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                            
-                                        <form action="{{ route('deleteakunsiswa', $siswa->id) }}" method="post" class="d-inline">
-                                            @method('delete')
-                                            @csrf
-                                        <button title="Trash" class="pd-setting-ed border-0" onclick="return confirm('Apakah anda yakin menghapus akun {{ $siswa->nm_siswa }}?')"><i class="fa fa-trash-o"></i></button>
-                                        </form>
+                                        <a href="{{ route('deleteakunsiswa', $siswa -> id) }}" onclick="return confirm('Apakah anda yakin menghapus akun {{ $siswa->nm_siswa }} ?')" data-toggle="tooltip" title="Delete" class="pd-setting-ed">
+                                            <i class="ri-delete-bin-6-fill"></i></a>
                                     
                                 </td>
                                 </tr>

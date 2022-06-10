@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\KaryaSiswa;
+use App\Models\AkunSiswa;
 use Illuminate\Support\Facades\DB;
 
 class KaryaSiswaController extends Controller
@@ -27,7 +28,8 @@ class KaryaSiswaController extends Controller
      */
     public function create()
     {
-        return view ('tambahkarya');
+        $siswa = AkunSiswa::all();
+        return view ('tambahkarya', compact('siswa'));
     }
 
     /**
@@ -62,8 +64,9 @@ class KaryaSiswaController extends Controller
      */
     public function edit($id)
     {
-        $editkarya = KaryaSiswa::findorfail($id);
-        return view ('editkarya', compact('editkarya'));
+        $siswa = AkunSiswa::all();
+        $editkarya = KaryaSiswa::with('Akunsiswa')->findorfail($id);
+        return view ('editkarya', compact('editkarya','siswa'));
     }
 
     /**
@@ -77,7 +80,7 @@ class KaryaSiswaController extends Controller
     {
         $editkarya = KaryaSiswa::findorfail($id);
         $editkarya->update($request->all());
-        return redirect(route('editkarya'));
+        return redirect(route('karyasiswa'));
     }
 
     /**
