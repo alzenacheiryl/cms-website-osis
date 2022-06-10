@@ -75,27 +75,21 @@
 			<div class="content-error">
 				<div class="hpanel">
                     <div class="panel-body">
-                        <form action="#" id="loginForm">
+                        <form action="{{ route('postregister') }}" id="loginForm" method="post">
+                          @csrf
                             <div class="row">
                                 <div class="form-group col-lg-12">
-                                    <label>Username</label>
-                                    <input class="form-control">
+                                    <label>Nama Lengkap</label>
+                                    <input name="name" class="form-control">
                                 </div>
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-12">
+                                    <label>Email</label>
+                                    <input name="email" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-12">
                                     <label>Password</label>
-                                    <input type="password" class="form-control">
+                                    <input name="password" type="password" class="form-control">
                                 </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Ulangi Password</label>
-                                    <input type="password" class="form-control">
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Email Address</label>
-                                    <input class="form-control">
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Ulangi Email Address</label>
-                                    <input class="form-control">
                                 </div>
                                 <div class="checkbox col-lg-12">
                                     <input type="checkbox" class="i-checks" checked> Data yang disimpan sudah benar

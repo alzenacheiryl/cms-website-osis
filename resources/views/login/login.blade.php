@@ -75,21 +75,22 @@
 			<div class="content-error">
 				<div class="hpanel">
                     <div class="panel-body">
-                        <form action="#" id="loginForm">
+
+                        <form action="{{ route('postlogin') }}" id="loginForm" method="post">
+                          @csrf
                             <div class="form-group">
-                                <label class="control-label" for="username">Username</label>
+                                <label class="control-label" for="username">Email</label>
                                 <input type="text" placeholder="example@gmail.com" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">
                                 <span class="help-block small">Ketikkan email kamu</span>
                             </div>
                             <div class="form-group">
                                 <label class="control-label" for="password">Password</label>
-                                <input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
+                                <input type="password" title="Please enter your password" placeholder="***********" required="" value="" name="password" id="password" class="form-control">
                                 <span class="help-block small">Ketikkan password kamu</span>
                             </div>
                             <div class="checkbox login-checkbox">
                                 <label>
 										<input type="checkbox" class="i-checks"> Remember me </label>
-                                <p class="help-block small">(if this is a private computer)</p>
                             </div>
                             <button class="btn btn-success btn-block loginbtn">Login</button>
                             <a class="btn btn-default btn-block" href="register">Register</a>

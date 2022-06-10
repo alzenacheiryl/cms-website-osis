@@ -3,8 +3,8 @@
 use App\Http\Controllers\KritikSaranController;
 use App\Http\Controllers\KaryaSiswaController;
 use App\Http\Controllers\AkunSiswaController;
-use App\Http\Controllers\controller3;
-use App\Http\Controllers\controller2;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\controller1;
 use Illuminate\Support\Facades\Route;
 
@@ -47,16 +47,17 @@ Route::get('/editkritik/{id}', [KritikSaranController::class,'edit'])->name('edi
 Route::post('/editkankritik/{id}', [KritikSaranController::class, 'update'])->name('editkankritik');
 Route::get('/deletekritiksaran/{id}', [KritikSaranController::class, 'destroy'])->name('deletekritiksaran');
 
+//Sistem Login
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
+Route::get('/register', [RegisterController::class, 'create'])->name('register');
+Route::post('/postregister', [RegisterController::class, 'store'])->name('postregister');
+
 //Lama
 Route::get('/event', [controller1::class, 'event'])->name('event');
 Route::get('/editakun', [controller1::class, 'editakun'])->name('editakun');
 Route::get('/infolomba', [controller1::class, 'infolomba'])->name('info lomba');
 Route::get('/programkerja', [controller1::class, 'programkerja'])->name('programkerja');
-
-//Sistem Login
-Route::get('/login', [controller2::class, 'login'])->name('login');
-Route::get('/register', [controller3::class, 'register'])->name('register');
-Route::post('/register', [controller3::class, 'store'])->name('register');
 
 //welcome
 Route::get('/welcome', [controller1::class, 'welcome'])->name('welcome');
