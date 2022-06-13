@@ -19,8 +19,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//welcome
+Route::get('/', [controller1::class, 'welcome'])->name('welcome');
+
 //Dasboard
-Route::get('/', [controller1::class, 'dashboard'])->name('dashboard');
 Route::get('/dashboard', [controller1::class, 'dashboard'])->name('dashboard');
 
 //Akun Siswa
@@ -58,6 +60,3 @@ Route::get('/event', [controller1::class, 'event'])->name('event');
 Route::get('/editakun', [controller1::class, 'editakun'])->name('editakun');
 Route::get('/infolomba', [controller1::class, 'infolomba'])->name('info lomba');
 Route::get('/programkerja', [controller1::class, 'programkerja'])->name('programkerja');
-
-//welcome
-Route::get('/welcome', [controller1::class, 'welcome'])->name('welcome');
